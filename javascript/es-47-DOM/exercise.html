@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <div id="container">
+      <form>
+        <div>
+          <label>First Name:</label>
+          <input type="text" class="form-input" id="firstName" value="Mario"/>
+        </div>
+        <div>
+          <label>Last Name:</label>
+          <input type="text" class="form-input" id="lastName" value="Rossi"/>
+        </div>
+        <div>
+          <label>Age:</label>
+          <input type="number" class="form-input" id="age" value="25"/>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+// QUERYSELECTORALL
+
+const input = document.querySelectorAll('input')
+.forEach((input) => {
+  console.log(`${input.previousElementSibling.innerHTML} ${input.value}`);
+});
+
+// GETELEMENTBYCLASS
+
+/* const input = document.getElementsByClassName('form-input')
+
+for(let i = 0; i < input.length; i++) {
+  console.log(`${input[i].previousElementSibling.innerHTML} ${input[i].value}`)
+} */
+
+</script>

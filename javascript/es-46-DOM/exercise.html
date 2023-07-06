@@ -1,0 +1,52 @@
+<html>
+  <body>
+    <div id="container">
+      <form>
+        <div>
+          <label>First Name:</label>
+          <input type="text" class="form-input" id="firstName" value="Mario" />
+        </div>
+        <div>
+          <label>Last Name:</label>
+          <input type="text" class="form-input" id="lastName" value="Rossi" />
+        </div>
+        <div>
+          <label>Age:</label>
+          <input type="number" class="form-input" id="age" value="25" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+
+// QUERYSELECTORALL
+
+  const formInputValue = document.querySelectorAll("input[type='text'].form-input")
+  .forEach((input) => console.log(input.value));
+  
+  /* const formInputValue = document.querySelectorAll(".form-input")
+  .forEach((input) => {
+    if(input.type === 'text') {
+       console.log(input.value);
+    }
+  }); */
+
+  
+// GETELEMENTBYCLASS
+  
+  // const formInputValue = document.getElementsByClassName('form-input');
+  // IN QUESTO CASO RICEVIAMO UNA COLLEZIONE E NON UN ARRAY E NON POSSIAMO USARE FOREACH SE NON CONVERTIAMO LA COLLEZIONE IN UN ARRAY 
+
+ /*  for(let i = 0; i < formInputValue.length; i++) {
+    if(formInputValue[i].type === 'text') {
+      console.log(formInputValue[i].value)
+    }
+  }
+ */
+  
+
+  
+
+</script>
